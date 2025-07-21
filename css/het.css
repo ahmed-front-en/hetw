@@ -60,7 +60,7 @@ header .container nav ul{
 display: flex;
 justify-content: space-between;
 align-items: center;
-position: relative;
+
 }
 header .container nav ul li{
 position: relative;
