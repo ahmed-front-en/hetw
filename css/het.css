@@ -1,5 +1,14 @@
 body {
     font-family: "Cairo", sans-serif;
+      padding: 0;
+    margin: 0;
+background-color: #0a0a0a;
+background-image: 
+          linear-gradient(30deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03)),
+          linear-gradient(150deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03)),
+          linear-gradient(30deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03));
+background-size: 80px 140px;
+
 }
 * {
     padding: 0;
@@ -11,19 +20,11 @@ body {
 }
 
 :root {
-   --main-color:#F8F9FA;
-   --second-color:#A7A9AB;
-   --hb-color : #111315;
-  --ng-color: #f8f9fa47;
-  --cd-color: #f8f9fa08;
-  --fg-color:#222227c9;
+   --main-color:#10002b;
+   
     --transition: all 0.3s ease-in-out;
 }
-body {
-  background-color:var(--cd-color) ;
-    padding: 0;
-    margin: 0;
-}
+
 .container {
     width: 90%;
     padding-right: 20px;
@@ -32,13 +33,13 @@ body {
     margin-right: auto;
 }
 header {
-    background-color: var(--hb-color);
+   
     padding: 5px;
 }
  
 header .container .logo {
 display: flex;
-color: var(--main-color);
+color: #f1f1f1;
 width: fit-content;
 transition: var(--transition);
 }
@@ -74,7 +75,7 @@ width: 0%;
 left: 0;
 bottom: 0;
 transition: var(--transition);
-background-color: var(--main-color);
+background-color: white;
 
 }
 header .container nav ul li::before {
