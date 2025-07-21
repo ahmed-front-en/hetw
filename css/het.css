@@ -14,18 +14,20 @@ body {
    --main-color:#F8F9FA;
    --second-color:#A7A9AB;
    --hb-color : #111315;
-  
+  --ng-color: #f8f9fa47;
+  --cd-color: #f8f9fa08;
+  --fg-color:#222227c9;
     --transition: all 0.3s ease-in-out;
 }
 body {
-  
+  background-color:var(--cd-color) ;
     padding: 0;
     margin: 0;
 }
 .container {
     width: 90%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -92,4 +94,42 @@ width: 100%;
    
 header .container nav ul li a {
     color: var(--second-color);
+}
+.page {
+padding-bottom: 50px;
+padding-top: 50px;
+}
+.page .container {
+    background-color: var(--cd-color);
+}
+.page .container .text {
+    line-height: 2;
+    text-align: center;
+}
+.page .container .text h3 {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: var(--hb-color);
+}
+.page .container .text p {
+    line-height: 1.8;
+    padding: 4px;
+    color: var(--fg-color);
+}
+.page .container .serv {
+line-height: 1.8;
+    text-align: center;
+    color: var(--hb-color);
+}
+.page .container .serv li {
+font-size: 18px;
+}
+.page .container  p {
+    color: var(--fg-color);
+    text-align: center;
+    line-height: 1.7;
 }
