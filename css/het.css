@@ -35,9 +35,7 @@ header {
     background-color: var(--hb-color);
     padding: 5px;
 }
-header .container {
-
-}
+ 
 header .container .logo {
 display: flex;
 color: var(--main-color);
