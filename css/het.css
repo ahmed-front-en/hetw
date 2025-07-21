@@ -21,7 +21,6 @@ background-size: 80px 140px;
 
 :root {
    --main-color:#10002b;
-   
     --transition: all 0.3s ease-in-out;
 }
 
@@ -33,7 +32,6 @@ background-size: 80px 140px;
     margin-right: auto;
 }
 header {
-   
     padding: 5px;
 }
  
