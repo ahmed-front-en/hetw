@@ -1,12 +1,11 @@
 body {
-    font-family: "Cairo", sans-serif;
-      padding: 0;
-    margin: 0;
+font-family: "Cairo", sans-serif;  padding: 0;
+margin: 0;
 background-color: #0a0a0a;
 background-image: 
-          linear-gradient(30deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03)),
-          linear-gradient(150deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03)),
-          linear-gradient(30deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03));
+linear-gradient(30deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03)),
+linear-gradient(150deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03)),
+linear-gradient(30deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03));
 background-size: 80px 140px;
 
 }
@@ -20,8 +19,13 @@ background-size: 80px 140px;
 }
 
 :root {
-   --main-color:#10002b;
-    --transition: all 0.3s ease-in-out;
+    --main-color:  #9c27b0;
+    --second-collor: #ffffff;
+    --back-ground-color: #121212;
+    --accent-collor: #6a1b9a;
+    --grey-text: #b0b0b0;
+   --color: #10002b;
+   --transition: all 0.3s ease-in-out;
 }
 
 .container {
@@ -33,20 +37,23 @@ background-size: 80px 140px;
 }
 header {
     padding: 5px;
+    background-color: #121212;
 }
  
 header .container .logo {
 display: flex;
-color: #f1f1f1;
+color:var(--main-color);
 width: fit-content;
 transition: var(--transition);
 }
 header .container .logo:hover  {
     transform: translateX(-1rem);
-    width: 20%;
+    font-size: 20px;
+    color:var(--second-collor);
 }
 header .container .logo i {
     padding: 5px;
+    color: var(--accent-collor);
 }
 header .container .logo:hover i {
     transform: translateX(-2rem);
@@ -73,7 +80,7 @@ width: 0%;
 left: 0;
 bottom: 0;
 transition: var(--transition);
-background-color: white;
+background-color: var(--accent-collor);
 
 }
 header .container nav ul li::before {
@@ -90,14 +97,18 @@ width: 100%;
 }
    
 header .container nav ul li a {
-    color: var(--second-color);
+    color: var(--accent-collor);
+}
+header .container nav ul li a:hover {
+    color: #9c27b0;
+    font-size: 17px;
 }
 .page {
 padding-bottom: 50px;
 padding-top: 50px;
 }
 .page .container {
-    background-color: var(--cd-color);
+    background-color: var(--back-ground-color);
 }
 .page .container .text {
     line-height: 2;
@@ -110,23 +121,24 @@ padding-top: 50px;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    color: var(--hb-color);
+    color: #6a1b9a;
 }
+
 .page .container .text p {
     line-height: 1.8;
     padding: 4px;
-    color: var(--fg-color);
+    color: #b0b0b0;
 }
 .page .container .serv {
 line-height: 1.8;
     text-align: center;
-    color: var(--hb-color);
+    color: var(--accent-collor);
 }
 .page .container .serv li {
 font-size: 18px;
 }
 .page .container  p {
-    color: var(--fg-color);
+    color: var(--grey-text);
     text-align: center;
     line-height: 1.7;
 }
