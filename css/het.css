@@ -1,10 +1,12 @@
 body {
-font-family: "Cairo", sans-serif;  padding: 0;
+font-family: "Cairo", sans-serif; 
+ padding: 0;
 margin: 0;
 scroll-behavior: smooth;
 
 }
 * {
+  scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -211,6 +213,7 @@ padding-top: 50px;
     text-align: center;
     margin: 5px;
     padding: 5px;
+   
 }
 .services .card .image {
     text-align: center;
@@ -246,6 +249,7 @@ padding-top: 50px;
     gap: 50px;
     align-items: center;
     justify-content: center;
+    
 }
 @media (max-width: 800px) {
   .gallery .container {
@@ -253,13 +257,16 @@ padding-top: 50px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
     align-items: center;
-    
   }
 }
 .gallery .container .video {
    text-align: center;
     margin: 5px;
     padding: 5px;
+     box-shadow: var(--text-shadow);
+     display: inline-grid;
+    justify-content: center;
+    align-items: center;
 }
 .gallery .container .video .vid {
    width: 300px;
@@ -272,5 +279,106 @@ max-width: 100%;
     margin: 5px;
 }
 .gallery .container .video .text h5 {
+  color: var(--accent-collor);
+  font-size: 20px;
+}
+.contact-us{
+padding-bottom: 50px;
+padding-top: 50px;
+}
+.contact-us .container {
+  display: flex;
+   flex-direction: column;
+}
+.contact-us .container p:nth-child(1) {
+  padding: 20px 10px;
+  margin: 8px;
+  color: var(--or);
+
+}
+.contact-us .container ul {
+ padding: 3px;
+}
+.contact-us .container ul li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  border: 1px solid var(--accent-collor);
+  border-radius: 10px;
+ background-color: var(--accent-collor);
+ text-align: center;
+}
+.contact-us .container ul li a {
+ color: var(--second-collor);
+ padding: 5px;
+}
+.contact-us .container ul li i {
+  padding: 5px;
+ margin: 8px;
+  font-size: 18px;
+  color: var(--or);
+  background-color: var(--accent-collor);
+}
+.contact-us .container p:nth-of-type(2) {
+  color: var(--grey-text);
+}
+footer {
+padding-bottom: 50px;
+padding-top: 50px;
+}
+footer .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+footer .container p:nth-of-type(1) {
+   color: var(--grey-text);
+}
+footer .container .social {
+  padding: 8px;
+  margin: 4px;
+ 
+}
+footer .container .social a {
+  color: var(--main-color);
+}
+footer .container .social i {
+  margin: 8px;
+  color: var(--accent-collor);
+}
+footer .container .ahmed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .ahmed h5 {
+  text-align: center;
+  color: var(--or);
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px;
+}
+footer .container p:nth-child(2) {
+text-align: center;
+color: var(--main-color);
+margin: 6px;
+}
+footer .container p:nth-child(3){
+font-size: 20px;
+margin: 8px;
+}
+footer .container .ahmed .so {
+display: flex;
+flex-direction: column;
+}
+footer .container .ahmed .so a {
+  margin: 8px;
+  padding: 3px;
+  color: var(--second-collor);
+  border: 1px solid var(--accent-collor);
+border-radius: 6px;
+}
+footer .container .ahmed .so i {
+  margin: 5px;
   color: var(--accent-collor);
 }
