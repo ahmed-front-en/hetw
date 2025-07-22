@@ -22,6 +22,9 @@ background-image:
 background-size: 80px 140px;
 }
 .site-name {
+  margin-bottom: 8px;
+  margin-right: 70%;
+  padding: 3px;
   font-size: 1.8rem;
   font-weight: 600;
   color: #ffffff;
@@ -100,7 +103,8 @@ header .container .logo:hover i {
     display: none;
 }
 header .container nav {
-padding: 5px;
+padding: 4px;
+margin: 5px 5px;
 }
 header .container nav ul{
 display: flex;
