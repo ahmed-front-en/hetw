@@ -23,10 +23,11 @@ background-size: 80px 140px;
 }
 .site-name {
   margin-bottom: 8px;
-  margin-right: 70%;
+  margin-right: 40%;
+  width: 200px;
   padding: 3px;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: #ffffff;
   letter-spacing: .9px;
  text-align: center;
@@ -87,6 +88,7 @@ header .container .logo {
 display: flex;
 width: fit-content;
 transition: var(--transition);
+text-align: center;
 }
 header .container .logo:hover  {
     transform: translateX(-1.6rem);
