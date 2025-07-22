@@ -1,12 +1,6 @@
 body {
 font-family: "Cairo", sans-serif;  padding: 0;
 margin: 0;
-background-color: #0a0a0a;
-background-image: 
-linear-gradient(30deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03)),
-linear-gradient(150deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03)),
-linear-gradient(30deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03));
-background-size: 80px 140px;
 
 }
 * {
@@ -16,16 +10,42 @@ background-size: 80px 140px;
     font-family: "Cairo", sans-serif;
     text-decoration: none;
     list-style: none;
+  background-color: #0a0a0a;
+background-image: 
+          linear-gradient(30deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03)),
+          linear-gradient(150deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03)),
+          linear-gradient(30deg, rgba(128, 103, 243, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(128, 103, 243, 0.03) 87.5%, rgba(128, 103, 243, 0.03))
+        ;
+background-size: 80px 140px;
+}
+.title-glow {
+  font-size: 1rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #620cc4dc, #eaf7cb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #6a1b9a; /* fallback للمتصفحات اللي مش بتدعم clip */
+  text-shadow: 0 0 6px rgba(89, 79, 97, 0.2),
+               0 0 12px rgba(125, 2, 173, 0.15);
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
+
 :root {
-    --main-color:  #9c27b0;
+    --main-color:  #F5F5F5  ;
     --second-collor: #ffffff;
     --back-ground-color: #121212;
     --accent-collor: #6a1b9a;
+    --hover-color: ;
     --grey-text: #b0b0b0;
    --color: #10002b;
+   --or:#c49b66;
    --transition: all 0.3s ease-in-out;
+   --text-shadow: 0 0 6px rgba(0, 255, 198, 0.2),
+               0 0 12px rgba(56, 189, 248, 0.15);
 }
 
 .container {
@@ -37,23 +57,26 @@ background-size: 80px 140px;
 }
 header {
     padding: 5px;
-    background-color: #121212;
+   
 }
  
 header .container .logo {
 display: flex;
-color:var(--main-color);
+
 width: fit-content;
 transition: var(--transition);
+
 }
+ 
 header .container .logo:hover  {
-    transform: translateX(-1rem);
-    font-size: 20px;
-    color:var(--second-collor);
+    transform: translateX(-1.6rem);
+    font-size: 3rem;
+    font-weight: 600;
+   
 }
 header .container .logo i {
     padding: 5px;
-    color: var(--accent-collor);
+    color: var(--grey-text);
 }
 header .container .logo:hover i {
     transform: translateX(-2rem);
@@ -80,7 +103,8 @@ width: 0%;
 left: 0;
 bottom: 0;
 transition: var(--transition);
-background-color: var(--accent-collor);
+background-color:var(--main-color)
+
 
 }
 header .container nav ul li::before {
@@ -97,10 +121,11 @@ width: 100%;
 }
    
 header .container nav ul li a {
-    color: var(--accent-collor);
+    color: var(--main-color);
+     text-shadow: var(--text-shadow);
 }
 header .container nav ul li a:hover {
-    color: #9c27b0;
+    color: var(--second-collor);
     font-size: 17px;
 }
 .page {
@@ -108,7 +133,7 @@ padding-bottom: 50px;
 padding-top: 50px;
 }
 .page .container {
-    background-color: var(--back-ground-color);
+    
 }
 .page .container .text {
     line-height: 2;
@@ -122,6 +147,7 @@ padding-top: 50px;
     align-items: center;
     font-size: 24px;
     color: #6a1b9a;
+     text-shadow: var(--text-shadow);
 }
 
 .page .container .text p {
@@ -132,7 +158,9 @@ padding-top: 50px;
 .page .container .serv {
 line-height: 1.8;
     text-align: center;
-    color: var(--accent-collor);
+    color: var(--second-collor);
+    padding: 5px;
+    margin: 5px;
 }
 .page .container .serv li {
 font-size: 18px;
@@ -141,4 +169,5 @@ font-size: 18px;
     color: var(--grey-text);
     text-align: center;
     line-height: 1.7;
+   
 }
