@@ -366,6 +366,7 @@ margin: 6px;
 footer .container p:nth-child(3){
 font-size: 20px;
 margin: 8px;
+color: var(--main-color);
 }
 footer .container .ahmed .so {
 display: flex;
