@@ -193,10 +193,19 @@ padding-top: 50px;
 }
 .services .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
     gap: 50px;
     align-items: center;
     justify-content: center;
+}
+@media (max-width: 800px) {
+  .services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+    
+  }
 }
 .services .card {
     text-align: center;
@@ -226,4 +235,42 @@ padding-top: 50px;
 .services .card .text h5 {
     color: var(--accent-collor);
     font-size: 18px;
+}
+.gallery {
+padding-bottom: 50px;
+padding-top: 50px;
+}
+.gallery .container {
+   display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 800px) {
+  .gallery .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+    align-items: center;
+    
+  }
+}
+.gallery .container .video {
+   text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+.gallery .container .video .vid {
+   width: 300px;
+}
+.gallery .container .video .vid video {
+max-width: 100%;
+}
+.gallery .container .video .text {
+   padding: 5px;
+    margin: 5px;
+}
+.gallery .container .video .text h5 {
+  color: var(--accent-collor);
 }
