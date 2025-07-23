@@ -89,6 +89,7 @@ display: flex;
 width: fit-content;
 transition: var(--transition);
 text-align: center;
+position: fixed;
 }
 header .container .logo:hover  {
     transform: translateX(-1.6rem);
